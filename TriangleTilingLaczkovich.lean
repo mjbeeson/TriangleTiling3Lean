@@ -1,0 +1,29 @@
+-- Root of the library `TriangleTilingLaczkovich` (see lakefile.toml): Laczkovich's classification
+-- and the results that use it. It must import every module under `TriangleTiling/Laczkovich/`.
+import TriangleTiling.Laczkovich.Tables
+import TriangleTiling.Laczkovich.BaseAngles
+import TriangleTiling.Laczkovich.Isosceles
+import TriangleTiling.Laczkovich.Extended
+import TriangleTiling.Laczkovich.ThreeAlpha
+import TriangleTiling.Laczkovich.ThreeAlphaPhi
+import TriangleTiling.Laczkovich.ThreeAlphaRational
+import TriangleTiling.Laczkovich.ThreeAlphaTriquadratic
+import TriangleTiling.Laczkovich.ThreeAlphaTilingEq
+import TriangleTiling.Laczkovich.ThreeAlphaSecond
+import TriangleTiling.Laczkovich.ThreeAlphaIsoBeta
+import TriangleTiling.Laczkovich.ThreeAlphaIsoAB
+import TriangleTiling.Laczkovich.ThreeAlphaIsoAlpha
+import TriangleTiling.Laczkovich.ThreeAlphaRank
+import TriangleTiling.Laczkovich.ThreeAlphaNumber
+import TriangleTiling.Laczkovich.ThreeAlphaNo28
+import TriangleTiling.Laczkovich.ThreeAlphaVertices
+import TriangleTiling.Laczkovich.ThreeAlphaSection10
+import TriangleTiling.Laczkovich.ThreeAlphaIsoAB2
+import TriangleTiling.Laczkovich.ThreeAlphaScaling
+import TriangleTiling.Laczkovich.ThreeAlphaConstrBase
+import TriangleTiling.Laczkovich.ThreeAlphaTriqExist
+import TriangleTiling.Laczkovich.ThreeAlphaSecondExist
+import TriangleTiling.Laczkovich.ThreeAlphaIsoExist
+import TriangleTiling.Laczkovich.ThreeAlphaIsoBetaExist
+import TriangleTiling.Laczkovich.ThreeAlphaIsoAlphaExist
+import TriangleTiling.Laczkovich.ThreeAlphaN45

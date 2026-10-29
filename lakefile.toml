@@ -1,0 +1,22 @@
+name = "TriangleTiling"
+defaultTargets = ["TriangleTiling"]
+
+# Bonfioli's library (package `Erdos634`, which brings Mathlib v4.30.0 with it), from his repository
+# "formalizing-triangle-tiling-in-lean" (v1.0): the Erdős 634 files we used before (code-identical)
+# plus his formalization of Laczkovich's classification.
+# Pinned to one commit; to upgrade, change `rev` and run `lake update Erdos634`.
+[[require]]
+name = "Erdos634"
+git = "https://github.com/ElVec1o/formalizing-triangle-tiling-in-lean"
+rev = "d7281309fe69632fa19309f9fcd4dee6da7f03e3"
+subDir = "lean"
+
+[[lean_lib]]
+name = "TriangleTiling"
+
+# Laczkovich's classification and what depends on it. Its import closure in Erdos634 is about
+# a thousand modules (5 hours, up to 9 GB per process on the M2), too much for the CI runners,
+# so it is a separate library that `lake build` (the default target) does not build.
+# Build it locally with `lake build TriangleTilingLaczkovich` (one module at a time; see README.md).
+[[lean_lib]]
+name = "TriangleTilingLaczkovich"
